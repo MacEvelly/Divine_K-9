@@ -91,7 +91,7 @@ const App = () => {
   if (isLoading || items === null) {
     return (
       <div className="appHolder">
-        <h1>Fibbie’s Fantastic Feats</h1>
+        <Header/>
         <p>Loading...</p>
       </div>
     );
@@ -100,7 +100,7 @@ const App = () => {
   if (isError) {
     return (
       <div className="appHolder">
-        <h1>Fibbie’s Fantastic Feats</h1>
+        <Header/>
         <p>
           Error loading tricks.{" "}
           <button onClick={refetch}>Retry</button>
@@ -111,8 +111,8 @@ const App = () => {
 
   return (
     <div className="appHolder">
-      <h1>Fibbie’s Fantastic Feats</h1>
-      <p>
+      <Header/>
+      <p className="Instructions">
         Swipe right on any trick if completed <b>👉</b>
       </p>
       <ul>
@@ -139,9 +139,16 @@ const App = () => {
       {items.length > 0 && (
         <button onClick={refreshShuffle}>Refresh & Shuffle</button>
       )}
-      <img src="./Fibbie.webp" alt="My Dog Fibbie" className="Fibbie" />
+      <img src="./Dog.svg" alt="My Dog Fibbie" className="Fibbie" />
     </div>
   );
 };
+
+const Header = () => (
+  <header className="App-header">
+    <img src="./Logo.svg" className="App-logo" alt="logo" />
+    <h1>Divine Doggie Drills</h1>
+  </header>
+);
 
 export default App;

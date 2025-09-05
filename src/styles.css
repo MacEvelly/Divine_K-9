@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
 
 :root {
-  --primary: #b6b09f; /* Deep Blue */
-  --secondary: #eae4d5; /* Bright Blue */
+  --primary: #504df6; /* Deep Blue */
+  --secondary: #ffffff6b; /* Bright Blue */
   --neutral: #f2f2f2; /* Slate Gray */
 }
 
@@ -43,11 +43,40 @@ body,
   grid-template-rows: min-content min-content auto min-content;
   color: black;
   gap: 1rem;
+  
+  header{
+
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    align-items: center;
+    justify-items: center;
+
+    >img{
+      height: auto;
+      width: 100%;
+    }
+      > h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+    text-shadow: #000 2px 2px 4px;
+  }
+  }
+.Instructions{
+    color: white;
+    text-shadow: #000 2px 2px 4px;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
   > h1 {
     font-weight: bold;
     font-size: 2rem;
     margin: 0;
-  }
+    color: white;
+    text-shadow: #000 2px 2px 4px;
+}
   > p {
     margin: 0;
   }
@@ -138,11 +167,13 @@ body,
     bottom: -50px;
     left: -50px;
     width: 200px;
+      filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+
   }
   button {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    background-color: var(--secondary);
+    background-color: #ffffffbf;
     border: 1px solid gray;
     justify-self: end;
     text-decoration: none;
