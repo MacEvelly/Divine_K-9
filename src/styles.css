@@ -46,14 +46,15 @@ body,
   
   header{
 
-    display: grid;
+    /* display: grid;
     grid-template-columns: 125px 1fr;
     align-items: center;
-    justify-items: center;
+    justify-items: center; */
 
     >img{
       height: auto;
       width: 100%;
+      max-height: 145px;
     }
       > h1 {
     font-weight: bold;
