@@ -1,0 +1,176 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+
+:root {
+  --primary: #b6b09f; /* Deep Blue */
+  --secondary: #eae4d5; /* Bright Blue */
+  --neutral: #f2f2f2; /* Slate Gray */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: var(--primary);
+}
+
+#root {
+  height: 100dvh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.appHolder {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 1rem;
+  width: 100%;
+  height: 100dvh;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content auto min-content;
+  color: black;
+  gap: 1rem;
+  > h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+  }
+  > p {
+    margin: 0;
+  }
+  > ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 4px inset,
+      rgba(0, 0, 0, 0.3) 0px -7px 13px -3px inset,
+      rgba(0, 0, 0, 0.2) 0px 3px 0px inset;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: rgb(196, 196, 196);
+    border: 1px solid black;
+    background-color: var(--secondary);
+    > li > div {
+      padding: 0.5rem;
+      border: 1px solid;
+      background-color: var(--neutral);
+      border-radius: 0.5rem;
+      margin: 1.5rem;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+    h2 {
+      margin: 0.5rem;
+    }
+    p {
+      margin: 0.25rem;
+    }
+  }
+  .GoodBoy {
+    position: fixed;
+    height: 100dvh;
+    width: 100%;
+    background-color: var(--primary);
+    inset: 0;
+    z-index: 25;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-content: center;
+    > div {
+      inset: 0;
+      margin: auto;
+      height: fit-content;
+      background-color: white;
+      margin: 1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content min-content auto min-content;
+      justify-content: center;
+      align-content: center;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      z-index: 10;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      > h2 {
+        margin: 0;
+        padding: 0;
+      }
+      > p {
+        margin: 0.5rem;
+        padding: 0;
+      }
+      > img {
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+        min-width: 275px;
+        object-fit: contain;
+        margin-bottom: 1rem;
+      }
+      margin: auto 2rem;
+      > button {
+        justify-self: center !important;
+      }
+    }
+  }
+  .Fibbie {
+    position: absolute;
+    display: block;
+    bottom: -50px;
+    left: -50px;
+    width: 200px;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--secondary);
+    border: 1px solid gray;
+    justify-self: end;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+}
+/*
+ul {
+  list-style: none;
+  padding: 0;
+  border: 1px solid gray;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 4px inset,
+    rgba(0, 0, 0, 0.3) 0px -7px 13px -3px inset,
+    rgba(0, 0, 0, 0.2) 0px 3px 0px inset;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: rgb(196, 196, 196);
+}
+li > div {
+  padding: 1rem;
+  background-color: white;
+  margin: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+*/
